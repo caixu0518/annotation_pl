@@ -1,0 +1,17 @@
+C09:62538707-62544785	GeneWise	gene	50	5697	247.00	+	.	ID=genewise1;Name=BoAFLC1.2;
+C09:62538707-62544785	GeneWise	mRNA	50	5694	247.00	+	.	ID=genewise1.mRNA;Parent=genewise1;Name=BoAFLC1.2;
+C09:62538707-62544785	GeneWise	CDS	50	234	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	50	234	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	CDS	4090	4147	0.00	+	1	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	4090	4147	0.00	+	1	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	CDS	4521	4582	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	4521	4582	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	CDS	4663	4762	0.00	+	1	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	4663	4762	0.00	+	1	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	CDS	4848	4889	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	4848	4889	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	CDS	5114	5155	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	5114	5155	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	CDS	5599	5694	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:62538707-62544785	GeneWise	exon	5599	5694	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+

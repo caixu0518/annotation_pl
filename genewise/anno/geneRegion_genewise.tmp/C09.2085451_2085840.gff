@@ -1,0 +1,6 @@
+Bits   Query         start end Target      start end   idels introns
+184.92 PB18057       193  323 C09.2085451_2085840 5784 5395    0    0
+//
+C09.2085451_2085840	GeneWise	match	5784	5395	184.92	-	.	C09.2085451_2085840-genewise-prediction-1
+C09.2085451_2085840	GeneWise	cds	5784	5395	0.00	-	0	C09.2085451_2085840-genewise-prediction-1
+//

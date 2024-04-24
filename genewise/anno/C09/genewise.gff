@@ -1,0 +1,74 @@
+C09	GeneWise	match	1361660	1362052	174.32	+	.	ID=C09.1361660_1362049-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	1361660	1362052	0.00	+	0	ID=C09.1361660_1362049-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	2085840	2085451	184.92	-	.	ID=C09.2085451_2085840-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	2085840	2085451	0.00	-	0	ID=C09.2085451_2085840-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	21467204	21467632	127.81	+	.	ID=C09.21467204_21467608-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	21467204	21467632	0.00	+	0	ID=C09.21467204_21467608-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	28880500	28880324	82.12	-	.	ID=C09.28880324_28882173-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	28880500	28880324	0.00	-	0	ID=C09.28880324_28882173-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	29591720	29591505	104.64	-	.	ID=C09.29591327_29591720-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	29591720	29591505	0.00	-	0	ID=C09.29591327_29591720-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	match	29591503	29591330	135.42	-	.	ID=C09.29591327_29591720-genewise-prediction-2;Name=BoFLC1.1;
+C09	GeneWise	cds	29591503	29591330	0.00	-	0	ID=C09.29591327_29591720-genewise-prediction-2;Name=BoFLC1.1;
+
+C09	GeneWise	match	40552584	40552192	79.90	-	.	ID=C09.40552216_40552641-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	40552584	40552192	0.00	-	0	ID=C09.40552216_40552641-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	48411853	48411455	103.33	-	.	ID=C09.48411452_48411847-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	48411853	48411455	0.00	-	0	ID=C09.48411452_48411847-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	61409338	61409514	93.10	+	.	ID=C09.61397519_61409514-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	61409338	61409514	0.00	+	0	ID=C09.61397519_61409514-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	63395901	63400452	554.66	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63395901	63396085	0.00	+	0	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	intron	63396086	63398505	0.00	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63398506	63398563	0.00	+	1	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	intron	63398564	63398995	0.00	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63398996	63399235	0.00	+	0	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	intron	63399236	63399320	0.00	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63399321	63399362	0.00	+	0	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	intron	63399363	63399586	0.00	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63399587	63399628	0.00	+	0	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	intron	63399629	63399805	0.00	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63399806	63399886	0.00	+	0	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	intron	63399887	63400053	0.00	+	.	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	63400054	63400452	0.00	+	0	ID=C09.63395901_63400455-genewise-prediction-1;Name=BoFLC1.1;
+
+C09	GeneWise	match	63431651	63439793	259.51	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63431651	63431835	0.00	+	0	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63431836	63438090	0.00	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63438091	63438148	0.00	+	1	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63438149	63438619	0.00	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63438620	63438681	0.00	+	0	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63438682	63438761	0.00	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63438762	63438861	0.00	+	1	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63438862	63438946	0.00	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63438947	63438988	0.00	+	0	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63438989	63439212	0.00	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63439213	63439254	0.00	+	0	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63439255	63439691	0.00	+	.	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63439692	63439793	0.00	+	0	ID=C09.63419697_63439763-genewise-prediction-1;Name=BoFLC1.4;
+
+C09	GeneWise	match	63453538	63457760	259.51	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63453538	63453722	0.00	+	0	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63453723	63456057	0.00	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63456058	63456115	0.00	+	1	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63456116	63456586	0.00	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63456587	63456648	0.00	+	0	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63456649	63456728	0.00	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63456729	63456828	0.00	+	1	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63456829	63456913	0.00	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63456914	63456955	0.00	+	0	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63456956	63457179	0.00	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63457180	63457221	0.00	+	0	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	intron	63457222	63457658	0.00	+	.	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+C09	GeneWise	cds	63457659	63457760	0.00	+	0	ID=C09.63453538_63457730-genewise-prediction-1;Name=BoFLC1.4;
+
+C09	GeneWise	match	65172827	65173219	149.33	+	.	ID=C09.65172827_65173216-genewise-prediction-1;Name=BoFLC1.1;
+C09	GeneWise	cds	65172827	65173219	0.00	+	0	ID=C09.65172827_65173216-genewise-prediction-1;Name=BoFLC1.1;
+

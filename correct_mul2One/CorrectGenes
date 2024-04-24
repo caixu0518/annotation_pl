@@ -1,0 +1,10 @@
+#!/bin/bash
+
+merege_error_annotations=$1
+TandemGeneArray=$2
+supportGff3=$3
+gff3=$4
+
+echo 'usage: CorrectGenes merege_error_annotations TandemGeneArray supportGff3 gff3'
+
+perl /40t_1/caix/annotation_pl/correct_mul2One/correct_mul2One_results.pl $1 $2 $3 $4

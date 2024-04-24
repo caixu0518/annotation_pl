@@ -1,0 +1,4 @@
+genewise geneRegion_genewise.tmp/BoAFLC1.1.fasta geneRegion_genewise.tmp/C09.61621414_61621911.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.61621414_61621911.gff
+genewise geneRegion_genewise.tmp/BoAFLC1.1.fasta geneRegion_genewise.tmp/C09.27847907_27848368.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.27847907_27848368.gff
+genewise geneRegion_genewise.tmp/BoAFLC1.2.fasta geneRegion_genewise.tmp/C09.62543215_62556071.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.62543215_62556071.gff
+genewise geneRegion_genewise.tmp/BoAFLC1.1.fasta geneRegion_genewise.tmp/C09.62521626_62538938.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.62521626_62538938.gff

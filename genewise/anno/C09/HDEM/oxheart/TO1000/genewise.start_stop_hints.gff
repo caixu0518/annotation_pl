@@ -1,0 +1,5 @@
+C9	.	start	28935480	28935482	.	+	0	grp=genewise1;pri=4;src=P
+C9	.	start	51011382	51011384	.	+	0	grp=genewise2;pri=4;src=P
+C9	.	stop	51016313	51016316	.	+	0	grp=genewise3;pri=4;src=P
+C9	.	start	51033935	51033937	.	+	0	grp=genewise4;pri=4;src=P
+C9	.	stop	51038035	51038038	.	+	0	grp=genewise4;pri=4;src=P

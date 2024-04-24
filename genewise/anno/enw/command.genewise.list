@@ -1,0 +1,1 @@
+genewise geneRegion_genewise.tmp/PB18058.fasta geneRegion_genewise.tmp/C09:63453484-63457763.1_4280.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09:63453484-63457763.1_4280.gff

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+perl /40t_1/caix/annotation_pl/correct_mul2One/insert_otherSupportGenes.pl  $1 $2 $3 

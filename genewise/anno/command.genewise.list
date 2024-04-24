@@ -1,0 +1,11 @@
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.1361660_1362049.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.1361660_1362049.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.2085451_2085840.fasta -trev -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.2085451_2085840.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.21467204_21467608.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.21467204_21467608.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.28880324_28882173.fasta -trev -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.28880324_28882173.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.29591327_29591720.fasta -trev -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.29591327_29591720.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.40552216_40552641.fasta -trev -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.40552216_40552641.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.48411452_48411847.fasta -trev -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.48411452_48411847.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.61397519_61409514.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.61397519_61409514.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.63395847_63400455.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.63395847_63400455.gff
+genewise geneRegion_genewise.tmp/PB18058.fasta geneRegion_genewise.tmp/C09.63419643_63457730.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.63419643_63457730.gff
+genewise geneRegion_genewise.tmp/PB18057.fasta geneRegion_genewise.tmp/C09.65172827_65173216.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09.65172827_65173216.gff

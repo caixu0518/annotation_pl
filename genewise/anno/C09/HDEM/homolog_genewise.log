@@ -1,0 +1,16 @@
+CMD 1/4: makeblastdb -in HDEM.C9.fasta -dbtype nucl -title genome -parse_seqids -out genome &> makeblastdb.log
+1. Successfully Make Blast Database of HDEM.C9.fasta
+
+CMD 2/4: /40t_1/caix/software/tools/geta/homolog_paraBlast tblastn genome pep.fa 1e-5 8 out 6
+Number of  Commands: 4
+2. Successfully align homolog to genome by tblastn
+
+CMD 3/4: /40t_1/caix/software/tools/geta/homolog_blast2geneRegion out.tab pep.fa 0.4 1e-9 > homolog_gene_region.tab
+3. Successfully get homolog gene region information
+
+    3 gene regions, with average gene length 10837
+CMD 4/4: /40t_1/caix/software/tools/geta/homolog_geneRegion2genewise HDEM.C9.fasta pep.fa homolog_gene_region.tab 10837 8 > genewise.gff 2> genewise.start_info.txt
+4. Successfully run genewise parally
+
+The final result file : genewise.gff
+

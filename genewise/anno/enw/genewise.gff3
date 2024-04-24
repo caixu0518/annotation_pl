@@ -1,0 +1,17 @@
+C09:63453484-63457763	GeneWise	gene	1	4277	298.71	+	.	ID=genewise1;Name=PB18058;
+C09:63453484-63457763	GeneWise	mRNA	1	4277	298.71	+	.	ID=genewise1.mRNA;Parent=genewise1;Name=PB18058;
+C09:63453484-63457763	GeneWise	CDS	1	239	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	1	239	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	CDS	2575	2632	0.00	+	1	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	2575	2632	0.00	+	1	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	CDS	3104	3165	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	3104	3165	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	CDS	3246	3345	0.00	+	1	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	3246	3345	0.00	+	1	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	CDS	3431	3472	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	3431	3472	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	CDS	3697	3738	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	3697	3738	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	CDS	4176	4277	0.00	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C09:63453484-63457763	GeneWise	exon	4176	4277	0.00	+	0	ID=genewise1.mRNA.exon;Parent=genewise1.mRNA;
+

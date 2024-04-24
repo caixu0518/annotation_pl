@@ -1,0 +1,7 @@
+C9	GeneWise	mRNA	51011382	51014938	167.95	+	.	ID=genewise1.mRNA;Parent=genewise1;Name=BoAFLC1.1;
+C9	GeneWise	CDS	51011382	51011566	0	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C9	GeneWise	CDS	51014365	51014422	0	+	1	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C9	GeneWise	CDS	51014855	51015096	0	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C9	GeneWise	CDS	51015182	51015223	0	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C9	GeneWise	CDS	51015448	51015489	0	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;
+C9	GeneWise	CDS	51015667	51015750	0	+	0	ID=genewise1.mRNA.CDS;Parent=genewise1.mRNA;

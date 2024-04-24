@@ -1,0 +1,6 @@
+C09	.	start	63395901	63395903	.	+	0	grp=genewise1;pri=4;src=P
+C09	.	stop	63399907	63399910	.	+	0	grp=genewise1;pri=4;src=P
+C09	.	start	63419697	63419699	.	+	0	grp=genewise2;pri=4;src=P
+C09	.	stop	63424482	63424485	.	+	0	grp=genewise2;pri=4;src=P
+C09	.	start	63453538	63453540	.	+	0	grp=genewise3;pri=4;src=P
+C09	.	stop	63457760	63457763	.	+	0	grp=genewise3;pri=4;src=P

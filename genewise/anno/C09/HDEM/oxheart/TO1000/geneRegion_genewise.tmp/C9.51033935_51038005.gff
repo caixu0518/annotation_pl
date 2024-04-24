@@ -1,0 +1,18 @@
+Bits   Query         start end Target      start end   idels introns
+258.04 BoAFLC1.2       1  197 C9.51033935_51038005 3620 7720    0    6
+//
+C9.51033935_51038005	GeneWise	match	3620	7720	258.04	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	3620	3804	0.00	+	0	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	intron	3805	6151	0.00	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	6152	6209	0.00	+	1	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	intron	6210	6574	0.00	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	6575	6636	0.00	+	0	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	intron	6637	6716	0.00	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	6717	6816	0.00	+	1	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	intron	6817	6901	0.00	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	6902	6943	0.00	+	0	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	intron	6944	7167	0.00	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	7168	7209	0.00	+	0	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	intron	7210	7618	0.00	+	.	C9.51033935_51038005-genewise-prediction-1
+C9.51033935_51038005	GeneWise	cds	7619	7720	0.00	+	0	C9.51033935_51038005-genewise-prediction-1
+//

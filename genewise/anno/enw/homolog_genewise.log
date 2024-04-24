@@ -1,0 +1,15 @@
+CMD 1/4: makeblastdb -in ff.fa -dbtype nucl -title genome -parse_seqids -out genome &> makeblastdb.log
+1. Skip CMD 1/4 for file makeblastdb.ok exists
+
+CMD 2/4: /40t_1/caix/software/tools/geta/homolog_paraBlast tblastn genome pep.fasta 1e-5 8 out 6
+2. Skip CMD 2/4: for file blast.ok exists
+
+CMD 3/4: /40t_1/caix/software/tools/geta/homolog_blast2geneRegion out.tab pep.fasta 0.4 1e-9 > homolog_gene_region.tab
+3. Skip CMD 3/4: for file blast2geneRegion.ok  exists
+
+    1 gene regions, with average gene length 4280
+CMD 4/4: /40t_1/caix/software/tools/geta/homolog_geneRegion2genewise ff.fa pep.fasta homolog_gene_region.tab 4280 8 > genewise.gff 2> genewise.start_info.txt
+4. Successfully run genewise parally
+
+The final result file : genewise.gff
+

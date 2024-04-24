@@ -1,0 +1,38 @@
+C09	GeneWise	match	27847979	27848368	95.52	+	.	ID=C09.27847907_27848368-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	27847979	27848368	0.00	+	0	ID=C09.27847907_27848368-genewise-prediction-1;Name=BoAFLC1.1;
+
+C09	GeneWise	match	61621534	61621911	68.19	+	.	ID=C09.61621414_61621911-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	61621534	61621911	0.00	+	0	ID=C09.61621414_61621911-genewise-prediction-1;Name=BoAFLC1.1;
+
+C09	GeneWise	match	62521626	62525984	422.22	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62521626	62521810	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	intron	62521811	62524262	0.00	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62524263	62524320	0.00	+	1	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	intron	62524321	62524747	0.00	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62524748	62524987	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	intron	62524988	62525072	0.00	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62525073	62525114	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	intron	62525115	62525338	0.00	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62525339	62525380	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	intron	62525381	62525560	0.00	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62525561	62525641	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	intron	62525642	62525810	0.00	+	.	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	cds	62525811	62525984	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-1;Name=BoAFLC1.1;
+C09	GeneWise	match	62525993	62526217	164.23	+	.	ID=C09.62521626_62538938-genewise-prediction-2;Name=BoAFLC1.1;
+C09	GeneWise	cds	62525993	62526217	0.00	+	0	ID=C09.62521626_62538938-genewise-prediction-2;Name=BoAFLC1.1;
+
+C09	GeneWise	match	62551939	62556101	258.54	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62551939	62552123	0.00	+	0	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	intron	62552124	62554454	0.00	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62554455	62554512	0.00	+	1	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	intron	62554513	62554954	0.00	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62554955	62555016	0.00	+	0	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	intron	62555017	62555095	0.00	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62555096	62555195	0.00	+	1	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	intron	62555196	62555280	0.00	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62555281	62555322	0.00	+	0	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	intron	62555323	62555546	0.00	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62555547	62555588	0.00	+	0	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	intron	62555589	62555999	0.00	+	.	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+C09	GeneWise	cds	62556000	62556101	0.00	+	0	ID=C09.62543215_62556071-genewise-prediction-1;Name=BoAFLC1.2;
+

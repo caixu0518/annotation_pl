@@ -1,0 +1,8 @@
+C09	transdecoder	mRNA	63453484	63457760	.	+	.	ID=PB.18058b.1.p1;Parent=PB.18058b;
+C09	transdecoder	CDS	63453484	63453722	.	+	0	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1
+C09	transdecoder	CDS	63456058	63456115	.	+	1	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1
+C09	transdecoder	CDS	63456587	63456648	.	+	0	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1
+C09	transdecoder	CDS	63456729	63456828	.	+	1	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1
+C09	transdecoder	CDS	63456914	63456955	.	+	0	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1
+C09	transdecoder	CDS	63457180	63457221	.	+	0	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1
+C09	transdecoder	CDS	63457659	63457760	.	+	0	ID=cds.PB.18058b.1.p1;Parent=PB.18058b.1.p1

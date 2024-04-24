@@ -1,0 +1,1 @@
+genewise geneRegion_genewise.tmp/BoAFLC1.2.fasta geneRegion_genewise.tmp/C09:62538707-62544785.50_5664.fasta -tfor -gff -quiet -silent -sum > geneRegion_genewise.tmp/C09:62538707-62544785.50_5664.gff

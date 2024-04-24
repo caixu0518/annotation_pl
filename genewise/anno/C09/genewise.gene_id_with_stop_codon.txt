@@ -1,0 +1,9 @@
+Gene end with stop codon:genewise05	-
+Gene middle with stop codon: genewise06	-
+Gene end with stop codon:genewise07	-
+Gene end with stop codon:genewise08	-
+Gene end with stop codon:genewise10	+
+Gene end with stop codon:genewise11	+
+Gene end with stop codon:genewise12	+
+Gene end with stop codon:genewise13	+
+Gene middle with stop codon: genewise13	+

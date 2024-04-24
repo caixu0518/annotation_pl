@@ -1,0 +1,5 @@
+C09	.	stop	27848368	27848371	.	+	0	grp=genewise1;pri=4;src=P
+C09	.	start	62521626	62521628	.	+	0	grp=genewise3;pri=4;src=P
+C09	.	stop	62526217	62526220	.	+	0	grp=genewise4;pri=4;src=P
+C09	.	start	62551939	62551941	.	+	0	grp=genewise5;pri=4;src=P
+C09	.	stop	62556101	62556104	.	+	0	grp=genewise5;pri=4;src=P

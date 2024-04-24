@@ -1,0 +1,6 @@
+Bits   Query         start end Target      start end   idels introns
+89.61 BoAFLC1.1       1   59 C9.28933801_28935656 5299 5475    0    0
+//
+C9.28933801_28935656	GeneWise	match	5299	5475	82.12	+	.	C9.28933801_28935656-genewise-prediction-1
+C9.28933801_28935656	GeneWise	cds	5299	5475	0.00	+	0	C9.28933801_28935656-genewise-prediction-1
+//

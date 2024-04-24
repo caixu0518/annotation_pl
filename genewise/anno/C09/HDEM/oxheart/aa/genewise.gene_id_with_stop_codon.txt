@@ -1,0 +1,1 @@
+Gene end with stop codon:genewise1	+

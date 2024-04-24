@@ -1,0 +1,266 @@
+#!/usr/bin/perl -w
+use strict;
+
+my $gff3 = $ARGV[0]; # old gff3 file
+my $matchFile = $ARGV[1]; # matched file
+my $prefixname = 'Bra';
+my $prefixnameScf = 'BraAnng';
+   
+   &main($gff3, $matchFile);
+   
+sub main {
+  my ($gff3F, $matchedF) = @_;
+  
+  ##- index Gff3 file  
+  my %indexGff3 = ();
+     &readGff3($gff3F, \%indexGff3);
+
+  ##- process matched file and give new name
+  my $old_newGenes = "old_new_genes.list";
+     &readMatched($matchFile, $old_newGenes);
+
+  my $output = "$gff3.update";
+     &output(\%indexGff3, $old_newGenes, $output);
+
+}
+
+
+sub output {
+
+    my ($gff3, $old_newGenes, $output) = @_;
+    
+    open IN, $old_newGenes;
+    open OUT, ">$output";
+    while(<IN>){
+      chomp;
+      my $updateCoords = 'NA';
+      my $oldgeneid = (split(/\t/, $_))[1];
+      if(exists $gff3 ->{$oldgeneid}){
+         my ($oldgeneInfo, $matchLine) = ($gff3 ->{$oldgeneid}, $_);
+            &updateGeneCoords(\$oldgeneInfo, \$matchLine, \$updateCoords);
+      }
+      else{
+            die "cannot find geneid: $oldgeneid.\n\n";
+      }
+      print OUT $updateCoords, "\n";
+    }
+    close IN;
+    close OUT;
+
+}
+
+
+sub updateGeneCoords {
+
+    my ($oldCoords, $match, $newCoords) = @_;
+    
+    ##- read old gff3 
+    my ($gene, $mrna);
+    my @exon = ();
+    my @cds = ();
+    my @gff3 = split("\n", $$oldCoords);
+    for my $each(@gff3){
+        $gene = $each,      if($each =~ /\tgene\t/);
+        $mrna = $each,      if($each =~ /\tmRNA\t/);
+        push(@exon, $each), if($each =~ /\texon\t/);
+        push(@cds, $each),  if($each =~ /\tCDS\t/);
+    }
+
+    ##- matched coordinate information
+    my @oldgene = split(/\t/, $gene);
+    my ($oldStart, $oldStop) = ($oldgene[3],  $oldgene[4]);
+    my $oldStrand = $oldgene[6];
+    my ($newgeneid, $geneid, $chr, $start, $end, $strand) = (split(/\t/, $$match))[0,1,2,3,4,5];
+       $gene = join("\t", $chr, "EVM", "gene", $start, $end, ".", $strand, ".", "ID=$newgeneid;");
+       $mrna = join("\t", $chr, "EVM", "mRNA", $start, $end, ".", $strand, ".", "ID=$newgeneid.m1;Parent=$newgeneid;");
+
+    my @exonForm = ();
+    my @cdsForm = ();
+    my $line; 
+    my ($newStart, $newEnd);
+    ##- process exons
+    my $exon_Num = scalar(@exon);
+    my ($count, $exonInfo);
+    
+    if($strand eq $oldStrand){
+       if($strand eq "+"){
+          $count = 0;
+          for my $eachExon(@exon){
+                 $count += 1;
+              my @ExonInfo = split(/\t/, $eachExon);
+                 $exonInfo = 'exon'.$count;
+              ($newStart, $newEnd) = ($ExonInfo[3] - $oldStart + $start, $ExonInfo[4] - $oldStart + $start);
+              $line = join("\t", $chr, "EVM", "exon", $newStart, $newEnd, ".", $strand, ".", "ID=$newgeneid.m1.$exonInfo;Parent=$newgeneid.m1;");
+              push(@exonForm, $line);
+          }      
+       }
+       if($strand eq "-"){
+          $count = $exon_Num;
+          for my $eachExon(@exon){
+              my @ExonInfo = split(/\t/, $eachExon);
+                 $exonInfo = 'exon'.$count;
+              ($newStart, $newEnd) = ($ExonInfo[3] - $oldStart + $start, $ExonInfo[4] - $oldStart + $start);
+              $line = join("\t", $chr, "EVM", "exon", $newStart, $newEnd, ".", $strand, ".", "ID=$newgeneid.m1.$exonInfo;Parent=$newgeneid.m1;");
+              $count = $count -1;
+              push(@exonForm, $line);
+          }
+       }
+    }
+    if($strand ne $oldStrand){
+       if($oldStrand eq "-" && $strand eq "+"){
+          $count = 0;
+          my @tmp =();
+          for my $eachExon(@exon){
+                 $count += 1;
+              my @ExonInfo = split(/\t/, $eachExon);
+                 $exonInfo = 'exon'.$count;
+                 ($newStart, $newEnd) = ($oldStop - $ExonInfo[4] + $start, $oldStop - $ExonInfo[3] + $start);
+                 $line = join("\t", $chr, "EVM", "exon", $newStart, $newEnd, ".", $strand, ".", "ID=$newgeneid.m1.$exonInfo;Parent=$newgeneid.m1;");
+                 push(@tmp, $line);
+          }
+          @exonForm = reverse(@tmp);
+       }
+       if($strand eq "+" && $oldStrand eq "-"){
+          $count = $exon_Num;
+          my @tmp =();
+          for my $eachExon(@exon){
+              my @ExonInfo = split(/\t/, $eachExon);
+                 $exonInfo = 'exon'.$count;
+                 ($newStart, $newEnd) = ($end - ($ExonInfo[4] - $oldStart), $end - ($ExonInfo[3] - $oldStart));
+                 $line = join("\t", $chr, "EVM", "exon", $newStart, $newEnd, ".", $strand, ".", "ID=$newgeneid.m1.$exonInfo;Parent=$newgeneid.m1;");
+                 push(@tmp, $line);
+                 $count = $count -1;
+          }
+          @exonForm = reverse(@tmp);
+       }    
+    }
+    ##- process CDS
+    if($strand eq $oldStrand){    
+       for my $eachCDS(@cds){
+           my @CDSinfo = split(/\t/, $eachCDS);
+              ($newStart, $newEnd) = ($CDSinfo[3] - $oldStart + $start, $CDSinfo[4] - $oldStart + $start);
+              $line = join("\t", $chr, "EVM", "CDS", $newStart, $newEnd, ".", $strand, $CDSinfo[7], "ID=$newgeneid.m1.cds;Parent=$newgeneid.m1;"); 
+              push(@cdsForm, $line);
+       }
+    } 
+    if($oldStrand eq "-" && $strand eq "+"){
+       my @tmp = ();
+       for my $eachCDS(@cds){
+           my @CDSinfo = split(/\t/, $eachCDS);
+              ($newStart, $newEnd) = ($oldStop - $CDSinfo[4] + $start, $oldStop - $CDSinfo[3] + $start);
+              $line = join("\t", $chr, "EVM", "CDS", $newStart, $newEnd, ".", $strand, $CDSinfo[7], "ID=$newgeneid.m1.cds;Parent=$newgeneid.m1;");
+              push(@tmp, $line);
+       }
+       @cdsForm = reverse(@tmp);
+    }    
+    if($strand eq "+" && $oldStrand eq "-"){
+       my @tmp = ();
+       for my $eachCDS(@cds){
+           my @CDSinfo = split(/\t/, $eachCDS);
+              ($newStart, $newEnd) = ($end - ($CDSinfo[4] - $oldStart), $end - ($CDSinfo[3] - $oldStart)); 
+              $line = join("\t", $chr, "EVM", "CDS", $newStart, $newEnd, ".", $strand, $CDSinfo[7], "ID=$newgeneid.m1.cds;Parent=$newgeneid.m1;");
+              push(@tmp, $line);
+       }
+       @cdsForm = reverse(@tmp);
+    }
+   
+    ##- store new coordinate information
+    $$newCoords = join("\n", $gene, $mrna, @exonForm, @cdsForm);
+
+}
+
+sub readMatched {
+
+   my ($matchedFile, $newGenes) = @_;
+
+   my $matchedFileTemp = $matchedFile.".Temp";
+   open IN, $matchedFile;
+   open OUT, ">$matchedFileTemp";
+   while(<IN>){
+     chomp;
+     my @temp = split(/\t/, $_);
+     my $tmp = $temp[2];
+     if($temp[4] eq "-"){
+        $temp[2] = $temp[3];
+        $temp[3] = $tmp;
+     }
+     print OUT join("\t", @temp), "\n";
+   }
+   close IN;
+   close OUT;
+
+   my $sortmatchedFile = $matchedFile.".sort";
+   system("sort -k2,2 -k3,3n $matchedFileTemp > $sortmatchedFile");
+   `rm $matchedFileTemp`;   
+
+   my $newid;
+   my %chr = ();
+   my ($scfGenesCount, $chrGeneCount, $formatCount) = (0, 0, 0);
+   open IN3, $sortmatchedFile;
+   open OUT3, ">$newGenes";
+   while(<IN3>) {
+     chomp;
+     my @temp = split(/\t/, $_);
+     if($temp[1] =~ /Scaffold/ || $temp[1] =~ /scaffold/){
+
+        ##- process  genes on scaffolds
+        $scfGenesCount += 1;
+        &formatNum($scfGenesCount, \$formatCount);
+        $newid = $prefixnameScf.$formatCount.'.3C';
+     }
+     else{
+
+        ##- process genes on chrs
+        if(not exists $chr{$temp[1]}){
+           $chrGeneCount = 1;
+           $chr{$temp[1]} = "Y";
+        }
+        else{
+           $chrGeneCount += 1;
+        }
+        &formatNum($chrGeneCount, \$formatCount);
+        $newid = $prefixname.$temp[1]."g".$formatCount.'.3C';
+     }
+     print OUT3 join("\t", $newid, @temp), "\n";
+
+   }  
+   close IN3;
+   close OUT3;
+
+}
+
+
+sub formatNum {
+  my ($n, $num) = @_;
+
+  $n = $n*10;
+  $$num = "0000".$n  if($n >= 10 && $n < 100);
+  $$num = "000".$n  if($n >= 100 && $n < 1000);
+  $$num = "00".$n  if($n >= 1000 && $n < 10000);
+  $$num = "0".$n  if($n >= 10000 && $n < 100000);
+  $$num = $n  if($n >= 100000);
+
+}
+
+
+sub readGff3 {
+
+  my ($gff3F, $indexGff3) = @_;
+  
+  open IN0, $gff3F;
+  my $id;
+  while(<IN0>){
+      next, if(/^\s+$/ || /^#/);
+      chomp;
+      my @temp = split("\t", $_);
+      if($temp[2] =~ /gene/ && $temp[8] =~ /^ID=(\S+?);/){
+         $id = $1;
+         $indexGff3 ->{$id} = $_;
+      } 
+      else{
+         $indexGff3 ->{$id} .= "\n".$_; # joined by "\n" elements
+      }    
+  }
+  close IN0;
+
+}

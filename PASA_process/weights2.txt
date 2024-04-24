@@ -1,0 +1,3 @@
+ABINITIO_PREDICTION	GeneWise	10
+PROTEIN	GeneWise	10
+TRANSCRIPT	transdecoder	10

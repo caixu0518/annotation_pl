@@ -1,0 +1,17 @@
+#!/bin/bash
+
+gff3=$1
+genome=$2
+prefix=$3
+
+##- GFF3_clean gff3 genome.fasta aug|pasa|genewise|A,B,C,D...... 
+
+##- filter low quality genes
+    perl  /40t_1/caix/annotation_pl/correct_mul2One/detect_Filter_LQ_genes.pl  ${gff3}  ${genome}
+
+ftgff3=${gff3}.HQ
+
+##- rename
+    perl /40t_1/caix/annotation_pl/correct_mul2One/sort_rename.gff3.pl  ${ftgff3}  ${prefix}
+
+

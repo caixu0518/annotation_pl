@@ -1,0 +1,10 @@
+
+
+Building a new DB, current time: 12/21/2022 13:54:52
+New DB name:   genome
+New DB title:  genome
+Sequence type: Nucleotide
+Keep Linkouts: T
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 1 sequences in 2.41275 seconds.
